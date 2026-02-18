@@ -1,53 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Me</title>
-    <style>
-        h1 {color:rgb(255, 211, 105); 
-            font-size: 70px;
-            font-family: 'Times New Roman', Times, serif;
-            padding: 15px;
-        }
-        .button{
-            
-            padding: 15px 10px;
-            border-radius: 6px;
-            border-color: #F6C90E;
-            border-width: 6px;
-            font-size: 20px;
-            color: EEEEEE;
-        }
-        .qualification{
-            display: inline-block;
-            background-color: #edc110;
-            width: 45%;
-            border-radius: 6px;
-            border-color:whitesmoke;
-            padding: 30px 31px;
-            border-width: 4px;
-            border-style:solid;
-            cursor: pointer;           
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #1e2229;
+      color: #e0e0e0;
+      font-family: Georgia, serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav {
+      width: 100%;
+      padding: 16px 24px;
+    }
+
+    .nav-btn {
+      border: 2px solid #e8c430;
+      background: white;
+      color: #1e2229;
+      padding: 12px 28px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 40px 40px;
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 72px;
+      color: #f5c842;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .hero p {
+      font-size: 26px;
+      line-height: 1.7;
+      color: #c8c8c8;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 60px;
+      flex-wrap: wrap;
+    }
+
+    .card-btn {
+      background: #e8c430;
+      border: 2px solid white;
+      border-radius: 8px;
+      padding: 30px 60px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #000;
+      cursor: pointer;
+      width: 360px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(232, 196, 48, 0.3);
+    }
+  </style>
 </head>
-<body bgcolor="222831">
-    <a href="https://www.instagram.com/devale_hardik">
-        <button class="button">about us</button>  <!--link this with your instagram-->
-    </a>
-    
-    
-    <h1 style="text-align: center;"> Welcome </h1>
-    <p align ="center" style="font-size: 25px; color: whitesmoke;padding-bottom: 70px;padding-top: 15px;" >An aspiring software developer with a strong foundation in programming and data structures, seeking an opportunity to build efficient applications, learn new technologies, and grow as a technology professional.
-</p>
+<body>
 
- <div class="qualification" style="text-align: center;font-size: large;" onclick="window.location.href='myprofile.html'">
-    <h2>My Profile</h2>
- </div>
- <div class="qualification" style="text-align: center;font-size: large;" onclick="window.location.href='qualification.html'">
-    <h2>My Qualification</h2>
- </div>
+  <nav>
+    <button class="nav-btn">about us</button>
+  </nav>
+
+  <div class="hero">
+    <h1>Welcome</h1>
+    <p>An aspiring software developer with a strong foundation in programming and data structures, seeking an opportunity to build efficient applications, learn new technologies, and grow as a technology professional.</p>
+
+    <div class="buttons">
+      <button class="card-btn" onclick="window.location.href='myprofile.html'">My Profile</button>
+      <button class="card-btn" onclick="window.location.href='qualification.html'"> Qualification</button>
+    </div>
+  </div>
+
 </body>
-
 </html>
